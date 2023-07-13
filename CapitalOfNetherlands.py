@@ -8,7 +8,7 @@ while capitalGuess != "AMSTERDAM":
     if numberOfGuesses > 3:
         print("You guessed incorrectly three times. Game over.")
         break
-    capitalGuess = input("Guess again ")
+    capitalGuess = input("Guess again. ").upper()
 
-if capitalGuess == "AMSTERDAM":
+if numberOfGuesses <=3:
     print ("You guessed it. Amsterdam is the capital of The Netherlands. It took you ", numberOfGuesses, " guesses.")
